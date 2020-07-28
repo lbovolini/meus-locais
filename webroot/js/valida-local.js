@@ -32,7 +32,7 @@ function findLocalByCEP() {
             }
             xhttp.open("POST", "/locais/find", true)
             xhttp.setRequestHeader("Content-type", "application/json")
-            //xhttp.setRequestHeader("X-CSRF-Token", "48e21341ba57b6abebfd4fc3457938933c4a6621c69c34ceb5391b78")
+            xhttp.setRequestHeader("X-CSRF-Token", document.getElementById("token").value)
             xhttp.send("{\"cep\": \"" + cep + "\"}")
         }
     })

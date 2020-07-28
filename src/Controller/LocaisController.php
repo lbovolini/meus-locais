@@ -4,6 +4,7 @@ declare(strict_types=1);
 namespace App\Controller;
 
 use Jarouche\ViaCEP\HelperViaCep;
+use Cake\Http\Middleware\CsrfProtectionMiddleware;
 
 class LocaisController extends AppController
 {

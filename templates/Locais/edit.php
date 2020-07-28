@@ -1,4 +1,6 @@
 <h1>Editar Local</h1>
+
+<input id="token" type="hidden" value=<?= $this->request->getCookie('csrfToken'); ?>>
 <?php
     echo $this->Form->create($local);
     echo $this->Form->control('nome', ['label' => 'Nome', 'class' => 'form-control']);
