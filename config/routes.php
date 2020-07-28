@@ -55,7 +55,6 @@ $routes->scope('/', function (RouteBuilder $builder) {
     /*
      * ...and connect the rest of 'Pages' controller's URLs.
      */
-    $builder->connect('/locais/find', ['controller' => 'Locais', 'action' => 'find']);
 
     /*
      * Connect catchall routes for all controllers.
